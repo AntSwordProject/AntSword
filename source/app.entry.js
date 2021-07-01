@@ -186,7 +186,7 @@ antSword['encoders'] = (function () {
     php: [],
     custom: []
   };
-  let userencoder_path = path.join(remote.process.env.AS_WORKDIR, 'antData/encoders');
+  let userencoder_path = path.join(remote.process.env.AS_DATADIR, 'antData/encoders');
   // 初始化
   !fs.existsSync(userencoder_path) ?
     fs.mkdirSync(userencoder_path) :
@@ -243,7 +243,7 @@ antSword['decoders'] = (function () {
     jspjs: [],
     custom: []
   };
-  let userdecoder_path = path.join(remote.process.env.AS_WORKDIR, 'antData/encoders');
+  let userdecoder_path = path.join(remote.process.env.AS_DATADIR, 'antData/encoders');
   // 初始化
   !fs.existsSync(userdecoder_path) ?
     fs.mkdirSync(userdecoder_path) :
